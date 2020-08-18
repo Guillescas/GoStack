@@ -2,8 +2,34 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', (req, res) => {
-  return res.status(200).json({ message: 'Hello world!' })
+app.get('/projects', (req, res) => {
+  return res.status(200).json([
+    'Projeto 1',
+    'Projeto 2'
+  ])
+})
+
+app.post('/projects', (req, res) => {
+  return res.status(200).json([
+    'Projeto 1',
+    'Projeto 2',
+    'Projeto 3'
+  ])
+})
+
+app.put('/projects/:id', (req, res) => {
+  return res.status(200).json([
+    'Projeto 4',
+    'Projeto 2',
+    'Projeto 3'
+  ])
+})
+
+app.delete('/projects/:id', (req, res) => {
+  return res.status(200).json([
+    'Projeto 2',
+    'Projeto 3'
+  ])
 })
 
 app.listen(3333, () => {
