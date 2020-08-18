@@ -4,4 +4,10 @@
 
 ## What is this?
 
-Here is my platyground of content from GoStack course! Enjoy a lot of code and attempts to make it work hehe
+This is the repository for all that i have learned from GoStack course!
+
+## What will you find here?
+
+For me, here is my playground of content from GoStack course! 
+
+Enjoy a lot of code and attempts to make it work hehe 🙃
