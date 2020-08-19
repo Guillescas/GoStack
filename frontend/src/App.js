@@ -14,10 +14,17 @@ function App() {
     })
   }, [])
 
-  function handleAddProject() {
-    setProjects([...projects, `Novo Projeto ${Date.now()}`])
+  async function handleAddProject() {
+    // setProjects([...projects, `Novo Projeto ${Date.now()}`])
 
-    console.log(projects)
+    const response = await api.post('projects', {
+      title: `Front-end usando React Nativeeee Novo Projeto ${Date.now()}`,
+      owner: "Guizão"
+    })
+
+    const project = response.data
+
+    setProjects([...projects, project])
   }
 
   return (
