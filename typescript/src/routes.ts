@@ -11,7 +11,8 @@ export function helloWorld(request: Request, response: Response) {
       'ReactJS',
       'React Native',
       { title: 'JavaScript', experience: 100},
-    ]
+    ],
+    adress: ['Rua blabla', 'nº 720']
   })
 
   return response.json({ message: 'Hello World '})
